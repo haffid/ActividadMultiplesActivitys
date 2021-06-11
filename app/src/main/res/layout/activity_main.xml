@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgImagen"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user"
+        />
+    <TextView
+        android:id="@+id/txtTitulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenid@!"
+        android:layout_below="@id/imgImagen"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/teal_700"
+        />
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitulo1"
+        android:layout_marginTop="50sp"
+        android:hint="Ingrese su Nombre"
+        android:textSize="25sp"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNombre"
+        android:layout_marginTop="50sp"
+        android:hint="Ingrese su Edad"
+        android:textSize="25sp"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@id/txtEdad"
+        android:layout_margin="50sp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Ingresar"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:onClick="pulsar"
+        />
+
+</RelativeLayout>
